@@ -26,6 +26,14 @@ plugins: [
 
 An `accent-{color}` class will be created for each Tailwind color, much like `bg-` classes.
 
+Optionally, you can also customise the variants for the plugin, by adding to the variants section of your Tailwind config.
+
+```js
+variants: {
+	accentColor: ['responsive', 'dark', 'group-hover', 'focus-within', 'hover', 'focus'] // Listed are the defaults
+}
+```
+
 ## License
 
-This project is licensed under the [MIT License](https://opensource.org/licenses/MIT).
+This project is licensed under the [MIT License](https://github.com/lukewarlow/tailwind-accent-color/blob/master/LICENSE).

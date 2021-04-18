@@ -1,5 +1,5 @@
-module.exports = function() {
-	return function ({ e, addUtilities, theme }) {
+module.exports = function () {
+	return function ({e, addUtilities, theme, variants}) {
 		const themeColors = theme('colors');
 
 		const accentColors = Object.keys(themeColors)
@@ -13,20 +13,20 @@ module.exports = function() {
 					};
 				}
 
-				const variants = Object.keys(themeColors[key]);
+				const colorShades = Object.keys(themeColors[key]);
 
 				return {
 					...acc,
-					...variants.reduce((a, variant) => ({
+					...colorShades.reduce((a, shade) => ({
 						...a,
-						[`.accent-${e(key)}-${variant}`]: {
-							'accent-color': themeColors[key][variant]
+						[`.accent-${e(key)}-${shade}`]: {
+							'accent-color': themeColors[key][shade]
 						},
 					}), {}),
 				};
 
 			}, {});
 
-		addUtilities(accentColors);
+		addUtilities(accentColors, variants('accentColor', ['responsive', 'dark', 'group-hover', 'focus-within', 'hover', 'focus']));
 	}
 }
