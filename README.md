@@ -1,4 +1,4 @@
-# TailwindCSS Accent Colour Plugin
+# TailwindCSS Accent Color Plugin
 
 [![npm](https://img.shields.io/npm/v/tailwind-accent-color.svg?style=flat-square)](https://www.npmjs.com/package/tailwind-accent-color)
 
