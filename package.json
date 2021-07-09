@@ -1,6 +1,6 @@
 {
   "name": "tailwind-accent-color",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Tailwind plugin to create accent color classes",
   "keywords": [
     "tailwind",

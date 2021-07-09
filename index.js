@@ -13,6 +13,15 @@ module.exports = function () {
 					};
 				}
 
+				if (typeof themeColors[key] === 'function') {
+					return {
+						...acc,
+						[`.accent-${e(key)}`]: {
+							'accent-color': themeColors[key]({}),
+						},
+					};
+				}
+
 				const colorShades = Object.keys(themeColors[key]);
 
 				return {
