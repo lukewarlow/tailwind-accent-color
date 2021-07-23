@@ -2,7 +2,7 @@
 
 [![npm](https://img.shields.io/npm/v/tailwind-accent-color.svg?style=flat-square)](https://www.npmjs.com/package/tailwind-accent-color)
 
-This plugin generates [accent-color](https://drafts.csswg.org/css-ui-4/#widget-accent) classes.
+This plugin generates [accent-color](https://developer.mozilla.org/en-US/docs/Web/CSS/accent-color) classes.
 
 ## Installation
 
