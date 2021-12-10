@@ -4,6 +4,8 @@
 
 This plugin generates [accent-color](https://developer.mozilla.org/en-US/docs/Web/CSS/accent-color) classes.
 
+Note: As of TailwindCSS v3 these utilities are [included](https://tailwindcss.com/docs/accent-color) by default.
+
 ## Installation
 
 Add to your project via:
